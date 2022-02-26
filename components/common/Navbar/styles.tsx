@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
 	height: 80px;
-	background: #000;
+	background: #22252c;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	color: #fff;
+	color: #e5e5e4;
+	border-bottom: 1px solid #cccccc84;
 `;
 
 export const StyledLink = styled.a`

@@ -30,7 +30,7 @@ const Layout: React.FC<LayoutProps> = ({
 			</Head>
 			<LayoutElement>
 				<Navbar />
-				<main>{children}</main>
+				<main style={{ background: "#22252c" }}>{children}</main>
 				<Footer />
 			</LayoutElement>
 		</>

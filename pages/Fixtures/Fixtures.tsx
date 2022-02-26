@@ -1,10 +1,11 @@
 import { NextPage } from "next";
 import Layout from "../../components/common/Layout";
+import Sidenav from "../../features/SideNav";
 
 const Fixtures: NextPage = () => {
 	return (
 		<Layout pageTitle={"Fixtures"}>
-			<h1>Fixtures</h1>
+			<Sidenav />
 		</Layout>
 	);
 };
