@@ -10,7 +10,7 @@ export const SectionName = styled.div`
 	}
 `;
 
-export const LeaguesContainer = styled.div`
+export const TeamsContainer = styled.div`
 	padding: 10px 15px;
 `;
 
@@ -29,7 +29,7 @@ export const LeagueFilter = styled.div`
 	}
 `;
 
-export const LeagueSelector = styled.div`
+export const Teamselector = styled.div`
 	align-items: center;
 	margin: 0.5rem 0;
 	display: flex;

@@ -4,9 +4,9 @@ import {
 	CheckboxLeague,
 	IconDiv,
 	IconImg,
-	LeaguesContainer,
-	LeagueSelector,
 	SectionName,
+	TeamsContainer,
+	Teamselector,
 } from "./styles";
 
 const handleEditLeague = (
@@ -23,9 +23,9 @@ const LeagueList = () => {
 	return (
 		<>
 			<SectionName>
-				<span>Favorite Leagues</span>
+				<span>Favorite Teams</span>
 			</SectionName>
-			<LeaguesContainer>
+			<TeamsContainer>
 				<Box
 					sx={{
 						display: "flex",
@@ -38,71 +38,71 @@ const LeagueList = () => {
 						p: 2,
 					}}
 				>
-					<LeagueSelector>
+					<Teamselector>
 						<IconDiv>
 							<IconImg
-								src="https://media.api-sports.io/football/leagues/39.png"
+								src="https://media.api-sports.io/football/teams/49.png"
 								height={35}
 								width={35}
 							/>
 						</IconDiv>
 						{/* <img src={league.logo} height={35}/> */}
-						<span>Premier League</span>
+						<span>Chelsea</span>
 						<CheckboxLeague
 							size="small"
-							onChange={(e) => handleEditLeague(e, "Premier League", 39)}
+							onChange={(e) => handleEditLeague(e, "Chelsea", 49)}
 						/>
-					</LeagueSelector>
+					</Teamselector>
 					<Divider variant="middle" sx={{ background: "#a7abad", mb: 1 }} />
-					<LeagueSelector>
+					<Teamselector>
 						<IconDiv>
 							<IconImg
-								src="https://media.api-sports.io/football/leagues/78.png"
+								src="https://media.api-sports.io/football/teams/50.png"
 								height={35}
 								width={35}
 							/>
 						</IconDiv>
 						{/* <img src={league.logo} height={35}/> */}
-						<span>Bundesliga</span>
+						<span>Machester City</span>
 						<CheckboxLeague
 							size="small"
-							onChange={(e) => handleEditLeague(e, "Bundesliga", 78)}
+							onChange={(e) => handleEditLeague(e, "Machester City", 50)}
 						/>
-					</LeagueSelector>
+					</Teamselector>
 					<Divider variant="middle" sx={{ background: "#a7abad", mb: 1 }} />
-					<LeagueSelector>
+					<Teamselector>
 						<IconDiv>
 							<IconImg
-								src="https://media.api-sports.io/football/leagues/135.png"
+								src="https://media.api-sports.io/football/teams/85.png"
 								height={35}
 								width={35}
 							/>
 						</IconDiv>
 						{/* <img src={league.logo} height={35}/> */}
-						<span>Serie A</span>
+						<span>Paris Saint Germain</span>
 						<CheckboxLeague
 							size="small"
-							onChange={(e) => handleEditLeague(e, "Serie A", 135)}
+							onChange={(e) => handleEditLeague(e, "Paris Saint Germain", 85)}
 						/>
-					</LeagueSelector>
+					</Teamselector>
 					<Divider variant="middle" sx={{ background: "#a7abad", mb: 1 }} />
-					<LeagueSelector>
+					<Teamselector>
 						<IconDiv>
 							<IconImg
-								src="https://media.api-sports.io/football/leagues/140.png"
+								src="https://media.api-sports.io/football/teams/496.png"
 								height={35}
 								width={35}
 							/>
 						</IconDiv>
 						{/* <img src={league.logo} height={35}/> */}
-						<span>La Liga</span>
+						<span>Juventus</span>
 						<CheckboxLeague
 							size="small"
-							onChange={(e) => handleEditLeague(e, "La Liga", 140)}
+							onChange={(e) => handleEditLeague(e, "Juventus", 496)}
 						/>
-					</LeagueSelector>
+					</Teamselector>
 				</Box>
-			</LeaguesContainer>
+			</TeamsContainer>
 		</>
 	);
 };

@@ -1,10 +1,9 @@
-import { Divider } from "@mui/material";
-import { Box } from "@mui/system";
+import { Box, Divider } from "@mui/material";
+import { CheckboxLeague } from "../LeaguesList/styles";
 import {
-	CheckboxLeague,
+	FixturesMatchesContainer,
 	IconDiv,
 	IconImg,
-	LeaguesContainer,
 	LeagueSelector,
 	SectionName,
 } from "./styles";
@@ -19,19 +18,19 @@ const handleEditLeague = (
 	console.log(leagueIdChecked);
 };
 
-const LeagueList = () => {
+const FixturesMatches = () => {
 	return (
 		<>
 			<SectionName>
-				<span>Favorite Leagues</span>
+				<span>Fixtures Matches</span>
 			</SectionName>
-			<LeaguesContainer>
+			<FixturesMatchesContainer>
 				<Box
 					sx={{
 						display: "flex",
 						flexDirection: "column",
 						justifyContent: "space-evenly",
-						width: 300,
+						width: "50vw",
 						height: 280,
 						background: "#394046",
 						borderRadius: 10,
@@ -48,10 +47,6 @@ const LeagueList = () => {
 						</IconDiv>
 						{/* <img src={league.logo} height={35}/> */}
 						<span>Premier League</span>
-						<CheckboxLeague
-							size="small"
-							onChange={(e) => handleEditLeague(e, "Premier League", 39)}
-						/>
 					</LeagueSelector>
 					<Divider variant="middle" sx={{ background: "#a7abad", mb: 1 }} />
 					<LeagueSelector>
@@ -64,10 +59,6 @@ const LeagueList = () => {
 						</IconDiv>
 						{/* <img src={league.logo} height={35}/> */}
 						<span>Bundesliga</span>
-						<CheckboxLeague
-							size="small"
-							onChange={(e) => handleEditLeague(e, "Bundesliga", 78)}
-						/>
 					</LeagueSelector>
 					<Divider variant="middle" sx={{ background: "#a7abad", mb: 1 }} />
 					<LeagueSelector>
@@ -80,10 +71,6 @@ const LeagueList = () => {
 						</IconDiv>
 						{/* <img src={league.logo} height={35}/> */}
 						<span>Serie A</span>
-						<CheckboxLeague
-							size="small"
-							onChange={(e) => handleEditLeague(e, "Serie A", 135)}
-						/>
 					</LeagueSelector>
 					<Divider variant="middle" sx={{ background: "#a7abad", mb: 1 }} />
 					<LeagueSelector>
@@ -96,15 +83,11 @@ const LeagueList = () => {
 						</IconDiv>
 						{/* <img src={league.logo} height={35}/> */}
 						<span>La Liga</span>
-						<CheckboxLeague
-							size="small"
-							onChange={(e) => handleEditLeague(e, "La Liga", 140)}
-						/>
 					</LeagueSelector>
 				</Box>
-			</LeaguesContainer>
+			</FixturesMatchesContainer>
 		</>
 	);
 };
 
-export default LeagueList;
+export default FixturesMatches;

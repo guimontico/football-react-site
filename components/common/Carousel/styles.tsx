@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export const Section = styled.section`
 	position: relative;
@@ -6,8 +7,8 @@ export const Section = styled.section`
 	display: flex;
 	float: left;
 	margin: 0;
-	padding: 10px;
-	height: calc(100vh - 66px);
-	width: auto;
+	padding: 10px 0;
+	height: 50vh;
+	width: 50vw;
 	flex-direction: column;
 `;

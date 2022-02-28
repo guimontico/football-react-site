@@ -15,7 +15,7 @@ export const MatchLiveContainer = styled.div`
 `;
 
 export const HeaderDetails = styled.div`
-	padding-bottom: 15px;
+	padding-bottom: 5px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
@@ -62,7 +62,33 @@ export const LiveIndicator = styled.div`
 	}
 `;
 
-export const ResultGame = styled.div``;
+export const ResultGame = styled.div`
+	span {
+		font-family: PremierSans-Bold, Arial, Helvetica Neue, Helvetica, sans-serif;
+		color: #a7abad;
+		font-weight: 600;
+	}
+`;
+
+export const Score = styled.span`
+	font-size: 35px;
+	padding-top: 20px;
+`;
+
+export const Time = styled.span`
+	text-align: center;
+`;
+
+export const TeamNames = styled.div`
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 15px;
+	span {
+		font-family: PremierSans-Bold, Arial, Helvetica Neue, Helvetica, sans-serif;
+		color: #a7abad;
+		font-weight: 600;
+	}
+`;
 
 export const MatchDetailsLink = styled.div`
 	a {
@@ -117,7 +143,6 @@ export const IconDiv = styled.img`
 	max-width: 85px;
 	display: grid;
 	place-items: left;
-	margin-right: 10px;
 `;
 
 export const CheckboxLeague = styled(Checkbox)`

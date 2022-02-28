@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Checkbox } from "@mui/material";
 
 export const SectionName = styled.div`
 	padding: 15px 0 5px 30px;
@@ -10,23 +9,8 @@ export const SectionName = styled.div`
 	}
 `;
 
-export const LeaguesContainer = styled.div`
-	padding: 10px 15px;
-`;
-
-export const SportTitle = styled.div`
-	padding: 1rem 0 0 0;
-	color: #2e86de;
-	text-decoration: none;
-	font-weight: 800;
-	font-size: 1.7rem;
-`;
-
-export const LeagueFilter = styled.div`
-	margin-top: 15px;
-	span {
-		color: #a7abad;
-	}
+export const FixturesMatchesContainer = styled.div`
+	padding: 10px 0;
 `;
 
 export const LeagueSelector = styled.div`
@@ -56,11 +40,4 @@ export const IconImg = styled.img`
 	max-width: 35px;
 	place-items: center;
 	margin-right: 10px;
-`;
-
-export const CheckboxLeague = styled(Checkbox)`
-	padding: 3px 0 !important;
-	flex: 10% !important;
-	display: grid !important;
-	place-items: right !important;
 `;

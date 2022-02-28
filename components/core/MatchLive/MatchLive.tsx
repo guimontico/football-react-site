@@ -4,6 +4,7 @@ import IconButton from "@mui/material/IconButton";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOutlined";
+import Fab from "@mui/material/Fab";
 import {
 	IconDiv,
 	GameInfo,
@@ -15,6 +16,9 @@ import {
 	ResultGame,
 	ButtonArea,
 	MatchDetailsLink,
+	TeamNames,
+	Score,
+	Time,
 } from "./styles";
 
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
@@ -30,7 +34,7 @@ const MatchLive = () => {
 					display: "flex",
 					flexDirection: "column",
 					width: 300,
-					height: 300,
+					height: 340,
 					background: "#394046",
 					borderRadius: 10,
 					p: 2,
@@ -49,30 +53,33 @@ const MatchLive = () => {
 				</HeaderDetails>
 				<GameInfo>
 					<IconDiv
-						src="https://media.api-sports.io/football/teams/51.png"
+						src="https://media.api-sports.io/football/teams/50.png"
 						height={85}
 						width={85}
 					/>
 					<ResultGame>
-						<span>
-							2:0<br></br>
-							57'
-						</span>
+						<Score>2:0</Score>
+						<Time>57'</Time>
 					</ResultGame>
 					<IconDiv
-						src="https://media.api-sports.io/football/teams/66.png"
+						src="https://media.api-sports.io/football/teams/48.png"
 						height={85}
 						width={85}
 					/>
 				</GameInfo>
+				<TeamNames>
+					<span>Brighton</span>
+					<span>X</span>
+					<span>Aston Villa</span>
+				</TeamNames>
 				<ButtonArea>
-					<IconButton color="primary">
+					<Fab color="primary" sx={{ h: 1, w: 1 }}>
 						<FavoriteIcon />
-					</IconButton>
+					</Fab>
 					<Button variant="contained">Place Bet</Button>
-					<IconButton color="primary">
+					<Fab color="primary">
 						<PlayCircleOutlineIcon />
-					</IconButton>
+					</Fab>
 				</ButtonArea>
 				<Divider variant="middle" sx={{ background: "#a7abad", mb: 1 }} />
 				<MatchDetailsLink>
