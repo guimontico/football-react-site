@@ -8,7 +8,7 @@ export const Section = styled.section`
 	float: left;
 	margin: 0;
 	padding: 10px 0;
-	height: 50vh;
+	height: 45vh;
 	width: 50vw;
 	flex-direction: column;
 `;
