@@ -18,6 +18,10 @@ import {
 	OddBox,
 } from "./styles";
 
+const doThis = () => {
+	console.log("teste");
+};
+
 const handleEditLeague = (
 	e: React.ChangeEvent<HTMLInputElement>,
 	leagueNameChecked: string,
@@ -43,7 +47,7 @@ const FixturesMatches = () => {
 						width: "50vw",
 						height: 280,
 						background: "#394046",
-						borderRadius: 10,
+						borderRadius: 6,
 						p: 2,
 					}}
 				>
@@ -119,7 +123,7 @@ const FixturesMatches = () => {
 								</span>
 							</LeagueName>
 						</LeagueContent>
-						<TeamsConfront>
+						<TeamsConfront onClick={() => doThis()}>
 							<TeamsConfrontNameHome>
 								<span>FSV Mainz 05</span>
 							</TeamsConfrontNameHome>

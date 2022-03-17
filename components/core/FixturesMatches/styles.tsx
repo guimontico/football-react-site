@@ -7,6 +7,7 @@ export const Odds = styled.div`
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	margin-left: -10px;
 `;
 
 export const OddBox = styled(Box)`
@@ -56,6 +57,9 @@ export const TeamsConfront = styled.div`
 	flex-shrink: 0;
 	span {
 		color: #e5e5e4;
+	}
+	:hover {
+		cursor: pointer;
 	}
 `;
 

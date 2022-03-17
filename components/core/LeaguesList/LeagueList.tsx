@@ -34,7 +34,7 @@ const LeagueList = () => {
 						width: 300,
 						height: 280,
 						background: "#394046",
-						borderRadius: 10,
+						borderRadius: 6,
 						p: 2,
 					}}
 				>

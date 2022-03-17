@@ -19,7 +19,7 @@ const handleEditLeague = (
 	console.log(leagueIdChecked);
 };
 
-const LeagueList = () => {
+const TeamList = () => {
 	return (
 		<>
 			<SectionName>
@@ -34,7 +34,7 @@ const LeagueList = () => {
 						width: 300,
 						height: 280,
 						background: "#394046",
-						borderRadius: 10,
+						borderRadius: 6,
 						p: 2,
 					}}
 				>
@@ -107,4 +107,4 @@ const LeagueList = () => {
 	);
 };
 
-export default LeagueList;
+export default TeamList;
