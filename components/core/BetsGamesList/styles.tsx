@@ -15,3 +15,5 @@ export const SectionName = styled.div`
 export const BetsGamesListContainer = styled.div`
 	padding: 10px 0;
 `;
+
+export const TeamsSelector = styled.div``;

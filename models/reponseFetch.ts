@@ -1,12 +1,3 @@
-export interface ResponseFecth {
-	get: string;
-	parameters: Parameters;
-	errors: any[];
-	results: number;
-	paging: Paging;
-	response: Fixture[];
-}
-
 export interface Parameters {
 	season: string;
 	date: string;
@@ -18,17 +9,9 @@ export interface Paging {
 	total: number;
 }
 
-export interface Fixture {
-	fixture: Game;
-	league: League;
-	teams: Teams;
-	goals: Goals;
-	score: Score;
-}
-
 export interface Periods {
-	first: number | null;
-	second: number | null;
+	first?: any;
+	second?: any;
 }
 
 export interface Venue {
@@ -40,12 +23,12 @@ export interface Venue {
 export interface Status {
 	long: string;
 	short: string;
-	elapsed: number;
+	elapsed?: any;
 }
 
-export interface Game {
+export interface Fixture {
 	id: number;
-	referee: string;
+	referee?: any;
 	timezone: string;
 	date: Date;
 	timestamp: number;
@@ -68,14 +51,14 @@ export interface Home {
 	id: number;
 	name: string;
 	logo: string;
-	winner: boolean | null;
+	winner?: any;
 }
 
 export interface Away {
 	id: number;
 	name: string;
 	logo: string;
-	winner: boolean | null;
+	winner?: any;
 }
 
 export interface Teams {
@@ -84,28 +67,28 @@ export interface Teams {
 }
 
 export interface Goals {
-	home: number | null;
-	away: number | null;
+	home?: any;
+	away?: any;
 }
 
 export interface Halftime {
-	home: number | null;
-	away: number | null;
+	home?: any;
+	away?: any;
 }
 
 export interface Fulltime {
-	home: number | null;
-	away: number | null;
+	home?: any;
+	away?: any;
 }
 
 export interface Extratime {
-	home: number | null;
-	away: number | null;
+	home?: any;
+	away?: any;
 }
 
 export interface Penalty {
-	home: number | null;
-	away: number | null;
+	home?: any;
+	away?: any;
 }
 
 export interface Score {
@@ -113,4 +96,21 @@ export interface Score {
 	fulltime: Fulltime;
 	extratime: Extratime;
 	penalty: Penalty;
+}
+
+export interface Response {
+	fixture: Fixture;
+	league: League;
+	teams: Teams;
+	goals: Goals;
+	score: Score;
+}
+
+export interface ResponseFecth {
+	get: string;
+	parameters: Parameters;
+	errors: any[];
+	results: number;
+	paging: Paging;
+	response: Response[];
 }
